@@ -1,5 +1,0 @@
-steps:
-- id: "Rodando tests"
-  name: 'gcr.io/cloud-builders/go'
-  args: ['test']
-  env: ['GOPATH=.']
