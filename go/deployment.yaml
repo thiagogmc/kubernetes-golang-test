@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: golang-webserver
+spec: #spec do deployment
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: golang-webserver
+    spec:
+      containers:
+      - name: golang
+        image: thiagogmc/golang-webserver
+        ports:
+        - containerPort: 8000
